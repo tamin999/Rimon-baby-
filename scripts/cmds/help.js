@@ -60,11 +60,11 @@ module.exports = {
       const totalCommands = commands.size;
       msg += `\n𝗖𝘂𝗿𝗿𝗲𝗻𝘁𝗹𝘆, 𝘁𝗵𝗲 𝗯𝗼𝘁 𝗵𝗮𝘀 ${totalCommands} 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝘁𝗵𝗮𝘁 𝗰𝗮𝗻 𝗯𝗲 𝘂𝘀𝗲𝗱\n`;
       msg += `\n𝗧𝘆𝗽𝗲 ${prefix}𝗵𝗲𝗹𝗽 𝗰𝗺𝗱𝗡𝗮𝗺𝗲 𝘁𝗼 𝘃𝗶𝗲𝘄 𝘁𝗵𝗲 𝗱𝗲𝘁𝗮𝗶𝗹𝘀 𝗼𝗳 𝘁𝗵𝗮𝘁 𝗰𝗼𝗺𝗺𝗮𝗻𝗱\n`;
-      msg += `\n🫧𝑩𝑶𝑻 𝑵𝑨𝑴𝑬🫧:🎭𝘛ₒₓᵢ𝚌ᵢ𝚝ₑᵣ⭕`;
+      msg += `\n🫧𝑩𝑶𝑻 𝑵𝑨𝑴𝑬🫧:PUBLIC BOT`;
       msg += `\n𓀬 𝐁𝐎𝐓 𝐎𝐖𝐍𝐄𝐑 𓀬`;
       msg += `\n 	 					`;
-      msg += `\n~𝙉𝘼𝙈𝙀:♡︎ 𝙃𝘼𝙎𝘼𝙉 ♡︎`;
-      msg += `\n~𝙁𝘽:https://www.facebook.com/Itz.HaSaN.00`;
+      msg += `\n~𝙉𝘼𝙈𝙀:♡︎ YOUR RIMON 🥷`;
+      msg += `\n~𝙁𝘽:https://www.facebook.com/it.z.rimon.216225`;
 
       await message.reply({
         body: msg,
