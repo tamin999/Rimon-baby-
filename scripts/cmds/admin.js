@@ -6,7 +6,7 @@ module.exports = {
         name: "admin",
         aliases: ["ad"],
         version: "1.0",
-        author: "♡︎ 𝐻𝐴𝑆𝐴𝑁 ♡︎",
+        author: "Rimon",
         countDown: 5,
         role: 0,
         shortDescription: {
@@ -34,7 +34,7 @@ module.exports = {
                 + "\n %1"
                 + "\n _____________________________"
                 + "\n ♔︎ 𝑂𝑊𝑁𝐸𝑅 ♔︎:https://www.facebook.com/it.z.rimon.216225"
-                + "\n |__𝐻𝐴𝑆𝐴𝑁'𝑆_𝐵𝑂𝑇__|",
+                + "\n |__RIMON X BOT _|",
             noAdmin: "⚠️ | No admins found!",
             added: "✅ | Added admin role for %1 users:\n%2",
             alreadyAdmin: "\n⚠️ | %1 users already have admin role:\n%2",
