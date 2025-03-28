@@ -144,7 +144,7 @@ module.exports.onChat = async ({ api, event,message }) => {
   try{
     const body = event.body ? event.body.toLowerCase() : ""
     if(body.startsWith("baby") || body.startsWith("bby") || body.startsWith("bot") || body.startsWith("janu") || body.startsWith("kuttu")){
-      const arr = body.replace(/^\S+\s*/, "") || "hasan";
+      const arr = body.replace(/^\S+\s*/, "") || "Rimon";
       if (arr === "Rimon"){ 
 const funnyReplies = [
           "কি হয়ছে বেবি দাকস কেন 🍆🙂",
@@ -154,7 +154,7 @@ const funnyReplies = [
     "Hea janu bolo shuntachi🤤🍼",
     "ki hoiche ki koibi ?🐐",
     "tumi ki jano Rimon ar son hasan ☠️",
-    "baby tmi ki jano tumi onk 🥺",
+    "baby tmi ki jano tumi onk cute 🥺",
     "I love you ummmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmaaaaaaaaaaaaaaaaaaahhhhhhhhh🫦💋",
     "Kire bolod, amare koitechos naki? 🐸",
     "ei new jush khaw, bot bolte bolte hapai gecho 🧃",
