@@ -12,12 +12,12 @@ module.exports = {
       invalid_amount: "Enter a valid and positive amount to have a chance to win more!",
       not_enough_money: "Fokinni! Tui toh gorib, balance chack kor?! 😤",
       spin_message: "Spinning...",
-      win_message: "💰!!𝗦𝗟𝗢𝗧 𝗥𝗘𝗦𝗨𝗟𝗧!!🎰"
+      win_message: "✨!!𝗦𝗟𝗢𝗧 𝗥𝗘𝗦𝗨𝗟𝗧!!🔥"
         + "\n        "
         + "\n⚡ 𝑌𝑂𝑈 𝑊𝑂𝑁 𝑇𝐻𝐸 𝑆𝐿𝑂𝑇 🤝"
         + "\n~💸𝑊𝑂𝑁 𝑀𝑂𝑁𝐸𝑌💸: $%1"
         + "\n~𝐸𝑛𝑗𝑜𝑦☑️!",
-      lose_message: "💰!!𝗦𝗟𝗢𝗧 𝗥𝗘𝗦𝗨𝗟𝗧!!🎰"
+      lose_message: "💰!!𝗦𝗟𝗢𝗧 𝗥𝗘𝗦𝗨𝗟𝗧!!💔"
         + "\n        "
         + "\n😿 𝑌𝑂𝑈 𝐿𝑂𝑆𝑇 𝑇𝐻𝐸 𝑆𝐿𝑂𝑇 😿"
         + "\n~💸𝐿𝑂𝑆𝑇 𝑀𝑂𝑁𝐸𝑌😿: $%1"
