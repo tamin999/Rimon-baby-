@@ -30,8 +30,8 @@ module.exports = {
 			errorSendingNotification: "Có lỗi xảy ra khi gửi đến %1 nhóm:\n%2"
 		},
 		en: {
-			missingMessage: "Bby ki ki pathaibo oita bolo 🐸",
-			notification: "♡︎ 𝐻𝐴𝑆𝐴𝑁 ♡︎",
+			missingMessage: "𝙏𝙪𝙧 𝙠𝙞 𝙙𝙤𝙧𝙠𝙖𝙧 😤",
+			notification: "📢𝙉𝙤𝙩𝙞𝙛𝙞𝙘𝙖𝙩𝙞𝙤𝙣𝙨 𝙛𝙧𝙤𝙢 𝙤𝙬𝙣𝙚𝙧 𝙍𝙞𝙢𝙤𝙣 ☣️ ( 𝙙𝙤 𝙣𝙤𝙩 𝙧𝙚𝙥𝙡𝙮)",
 			sendingNotification: "Start sending notification from admin bot to %1 chat groups",
 			sentNotification: "✅ Sent notification to %1 groups successfully",
 			errorSendingNotification: "An error occurred while sending to %1 groups:\n%2"
