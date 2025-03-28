@@ -1,13 +1,14 @@
 const axios = require('axios');
 const baseApiUrl = async () => {
-  return "https://www.noobs-api.rf.gd/dipto";
+  const base = await axios.get('https://raw.githubusercontent.com/Blankid018/D1PT0/main/baseApiUrl.json');
+  return base.data.api;
 };
 
 module.exports.config = {
   name: "bby",
   aliases: ["baby", "bbe", "babe"],
   version: "6.9.0",
-  author: "Anas",
+  author: "dipto",
   countDown: 0,
   role: 0,
   description: "better then all sim simi",
@@ -103,4 +104,59 @@ module.exports.onStart = async ({ api, event, args, usersData }) => {
       return api.sendMessage(data, event.threadID, event.messageID);
     }
 
-    c
+    const d = (await axios.get(`${link}?text=${dipto}&senderID=${uid}&font=1`)).data.reply;
+    api.sendMessage(d, event.threadID, (error, info) => {
+      global.GoatBot.onReply.set(info.messageID, {
+        commandName: this.config.name,
+        type: "reply",
+        messageID: info.messageID,
+        author: event.senderID,
+        d, 
+        apiUrl: link
+      });
+    }, event.messageID);
+
+  } catch (e) {
+    console.log(e);
+    api.sendMessage("Check console for error", event.threadID, event.messageID);
+  }
+};
+
+module.exports.onReply = async ({ api, event, Reply }) => {
+  try{
+  if (event.type == "message_reply") {
+    const a = (await axios.get(`${await baseApiUrl()}/baby?text=${encodeURIComponent(event.body?.toLowerCase())}&senderID=${event.senderID}&font=1`)).data.reply;
+    await api.sendMessage(a, event.threadID, (error, info) => {
+      global.GoatBot.onReply.set(info.messageID, {
+        commandName: this.config.name,
+        type: "reply",
+        messageID: info.messageID,
+        author: event.senderID,
+        a
+      });
+    }, event.messageID);
+  }  
+  }catch(err){
+      return api.sendMessage(`Error: ${err.message}`, event.threadID, event.messageID);
+    }};
+
+module.exports.onChat = async ({ api, event,message }) => {
+  try{
+    const body = event.body ? event.body.toLowerCase() : ""
+    if(body.startsWith("baby") || body.startsWith("bby") || body.startsWith("janu")){
+      const arr = body.replace(/^\S+\s*/, "")
+      if(!arr) return message.reply("Yes 😀, i am here, tui meye hole amar boss Rimon ke dak vlo pola 🌚💋, ki kobi ko🥷🦆,hea bbz bolo, i love you,ummmmah baby  ")
+    const a = (await axios.get(`${await baseApiUrl()}/baby?text=${encodeURIComponent(arr)}&senderID=${event.senderID}&font=1`)).data.reply;
+    await api.sendMessage(a, event.threadID, (error, info) => {
+      global.GoatBot.onReply.set(info.messageID, {
+        commandName: this.config.name,
+        type: "reply",
+        messageID: info.messageID,
+        author: event.senderID,
+        a
+      });
+    }, event.messageID);
+    }
+  }catch(err){
+      return api.sendMessage(`Error: ${err.message}`, event.threadID, event.messageID);
+    }};
