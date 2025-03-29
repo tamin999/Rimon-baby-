@@ -107,7 +107,7 @@ onStart: async function ({ message, role, args, commandName, event, threadsData,
     if (event.body && event.body.toLowerCase() === "prefix") {
       return message.reply({
         body: getLang("myPrefix", globalPrefix, threadPrefix),
-        attachment: await utils.getStreamFromURL("https://i.imgur.com/GCfSRgf.gif") // Change Imgur link
+        attachment: await utils.getStreamFromURL("https://i.imgur.com/TiDEw8V.mp4") // Change Imgur link
       });
     }
   }
