@@ -147,14 +147,14 @@ module.exports.onChat = async ({ api, event,message }) => {
       const arr = body.replace(/^\S+\s*/, "") || "Rimon";
       if (arr === "Rimon"){ 
 const funnyReplies = [
-          "কি হয়ছে বেবি দাকস কেন 🍆🙂",
+          "কি হয়ছে বেবি দাকস কেন 🙂",
     "আমারে কেনো লাগবে তুর বল 🦆",
     "Ami ekhane bby 🥹",
     "Amake vhule jaw 🤌😫",
     "Hea janu bolo shuntachi🤤🍼",
     "ki hoiche ki koibi ?🐐",
     "tumi ki jano Rimon ar son hasan ☠️",
-    "baby tmi ki jano tumi onk cute 🥺",
+    "tmi ki jano tumi onk cute 🥺",
     "I love you ummmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmaaaaaaaaaaaaaaaaaaahhhhhhhhh🫦💋",
     "Kire bolod, amare koitechos naki? 🐸",
     "ei new jush khaw, bot bolte bolte hapai gecho 🧃",
@@ -168,7 +168,7 @@ const funnyReplies = [
     "তুই মেয়ে হলে আমার owner রিমনকে ডাক অনেক ভালো ছেলে 🔥🌚💋",
     "কি হইছে আমার কি কাজে লাগবে তুর !?🌚👀",
     "তুই সেই লুইচ্চাটা না !? 🙂🔪",
-    "bby daktecho kno ummmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmaaaaaaaaaaaaaaaaaaahhhhhhhhh 🫦💋\n\n🗣️Hasan🐸🔪",
+    "Tmr nam ki janu 💋🌚",
     "i love you janu🐣"
         ];
         return api.sendMessage(funnyReplies[Math.floor(Math.random() * funnyReplies.length)], event.threadID, (error, info) => {
