@@ -9,8 +9,8 @@ module.exports = {
 		aliases: ["info"],
 		author: "Rimon",
 		role: 0,
-		shortDescription: " ",
-		longDescription: "",
+		shortDescription: "Show Owner Information",
+		longDescription: "Displays detailed information about the bot owner.",
 		category: "info",
 		guide: "{pn}"
 	},
@@ -30,14 +30,14 @@ module.exports = {
 				Height: '6'
 			};
 
-			const bold = 'https://i.imgur.com/CNpkoYi.mp4';
+			const videoUrl = 'https://i.imgur.com/CNpkoYi.mp4';
 			const tmpFolderPath = path.join(__dirname, 'tmp');
 
 			if (!fs.existsSync(tmpFolderPath)) {
 				fs.mkdirSync(tmpFolderPath);
 			}
 
-			const videoResponse = await axios.get(bold, { responseType: 'arraybuffer' });
+			const videoResponse = await axios.get(videoUrl, { responseType: 'arraybuffer' });
 			const videoPath = path.join(tmpFolderPath, 'owner_video.mp4');
 
 			fs.writeFileSync(videoPath, Buffer.from(videoResponse.data, 'binary'));
@@ -63,13 +63,14 @@ module.exports = {
 
 			fs.unlinkSync(videoPath);
 
-			api.setMessageReaction('😘', event.messageID, (err) => {}, true);
+			api.setMessageReaction('💀', event.messageID, (err) => {}, true);
 		} catch (error) {
 			console.error('Error in ownerinfo command:', error);
-			return api.sendMessage('An error occurred while processing the command.', event.threadID);
+			return api.sendMessage('⚠️ An error occurred while processing the command.', event.threadID);
 		}
 	}
 };
 
+// ✅ No Prefix Enabled
 const wrapper = new GoatWrapper(module.exports);
-wrapper.applyNoPrefix({ allowPrefix: true });
+wrapper.applyNoPrefix();
